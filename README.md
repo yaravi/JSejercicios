@@ -4,12 +4,16 @@ Ejercicios variados de Javascript para principiantes
 
 Exercise 1:
 Solicitar al usuario que responda a la pregunta (“¿Eres bellisimo/a?”), en caso de contestar sí, responder “Ciertamente”, en caso de contestar no, responder: “No te creo”.
+
 Exercise 2:
 Solicitar al usuario un número, y determinar si es divisible entre dos o no. Mostrando al usuario un mensaje de “x número es divisible entre 2” o “x núm
+
 Exercise 3:
 Crear un programa que determine si un número introducido en un Prompt es par o no, la respuesta será mostrada en un Alert.
+
 Exercise 4:
 Solicitar al usuario un número de cliente. Si el número es el 1000, imprimir "Ganaste un premio", en caso contrario mostrar el número y el mensaje “Lo sentimos, sigue participando”.
+
 Exercise 5:
 Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es menor. No considerar el caso en que ambos números son iguales.
 Exercise 6:
