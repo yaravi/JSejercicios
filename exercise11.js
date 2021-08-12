@@ -9,13 +9,33 @@ total a pagar = (precio kilometro x kms recorridos) + extra por litros consumido
 var coche = 0.2;
 var moto =  0.1;
 var bus = 0.5;
+var extra5 = 5;
+var extra10 = 10;
 
 var pregunta11a = prompt("Que transporte utilizas? coche, moto o bus").toLowerCase();
 var pregunta11b = prompt ("Cuantos kilometros recorriste");
 
-if (pregunta11b >= 0 %% pregunta11b <= 100) {
+if (pregunta11b >= 0 && pregunta11b <= 100) {
     if (pregunta11a == "coche") {
-        console.log ("vas a pagar la cantidad de: ")
+        console.log ("vas a pagar la cantidad de: " + ((pregunta11b*coche)+extra5) );
     }
-
+    else if (pregunta11a == "moto") {
+        console.log ("vas a pagar la cantidad de: " + ((pregunta11b*moto)+extra5) );
+    }
+    else if (pregunta11a == "bus") {
+        console.log ("vas a pagar la cantidad de: " + ((pregunta11b*bus)+extra5) );
+    }
 }
+
+else if (pregunta11b > 100) {
+    if (pregunta11a == "coche") {
+        console.log ("vas a pagar la cantidad de: " + ((pregunta11b*coche)+extra10) );
+    }
+    else if (pregunta11a == "moto") {
+        console.log ("vas a pagar la cantidad de: " + ((pregunta11b*moto)+extra10) );
+    }
+    else if (pregunta11a == "bus") {
+        console.log ("vas a pagar la cantidad de: " + ((pregunta11b*bus)+extra10) );
+    }
+}
+else console.log("Cantidad en negativo no aceptada");
